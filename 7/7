@@ -1,7 +1,69 @@
 #7.1
+
 #вывод фразы n-раз
 
 for i in range(10):
     print('Python is awesome!')
+   
+#вывод случайной фразы, n-раз
+
+text, num = input(), int(input())
+for i in range(num):
+    print(text)
+
+##вывод пронумерованной случайной фразы
+
+text = input()
+for i in range(10):
+    print(i, text)
+
+#список квадратов n-числа 
+
+num = int(input())
+for i in range(num+1):
+    print('Квадрат числа', i, 'равен', i ** 2)
+
+#вывод элемента * от большего к меньшему
+#выражение 'for i in range(num,0,-1)' формирует цикл с конца, то есть i = 3, потом 2 и т.д.
+
+num = int(input())
+for i in range(num,0,-1):
+    print('*' *  i)
     
+#7.2
+
+#вывод всех чисел от num1 до num2
+
+num1,num2 = int(input()), int(input())
+for i in range(num1,num2+1,1):
+    print(i)
+
+#вывод согласно условиям, в зависимотсти от входных данных
+
+num1,num2 = int(input()), int(input())
+
+if num1 < num2:
+    for i in range(num1,num2+1):
+        print(i)
+elif num1 > num2:
+    for j in range(num1,num2-1,-1):
+        print(j)
+else:
+    print(num1)
+
+#вывод всех нечетных из списка включительно, от большего к меньшему 
+
+a,b = int(input()), int(input())
+for i in range(a,b-1,-1):
+    if i % 2 != 0:
+        print(i)
+        
+#вывод данных цикла в соответствии с условиями 
+
+num1, num2 = int(input()), int(input())
+for i in range(num1,num2+1,1):
+    if i % 17 == 0 or i % 10 == 9  or i % 5 == 0 and i % 3 == 0:
+        print(i)
+
+
 
