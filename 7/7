@@ -1,4 +1,4 @@
-#7.1
+#7.1 - for _ in range()
 
 #вывод фразы n-раз
 
@@ -166,3 +166,57 @@ for i in range(1,num+1):
     a = b + y
     y = b
     print(b, end =' ')
+   
+#7.4 - цикл while 
+
+#вывод членов последовательности до стоп слова 
+
+text = input()
+while text != 'КОНЕЦ':
+    print(text)
+    text = input()
+    
+#вывод членов последовательности до стоп слова
+
+text = input()
+while text != 'КОНЕЦ' and text != 'конец':
+        print(text)
+        text = input()
+
+#счетчик на количество членов последовательности, удовлетворяющих условиям задания 
+
+total = 0
+text = input()
+while text != 'стоп' and text != 'хватит' and text != 'достаточно':
+    total += 1 
+    text = input()
+print(total)
+
+#вывод членов последовательности до конкретного условия 
+
+num = int(input())
+while num % 7 == 0:
+    print(num)
+    num = int(input())
+
+#счетчик на количество членов последовательности, удовлетворяющих условиям задания 
+
+num, total = int(input()), 0
+while num >= 0:
+    total += num
+    num = int(input())
+print(total)
+
+#счетчик на количество членов последовательности, удовлетворяющих дмум и более условиям задания 
+
+
+num, total = int(input()), 0
+while num >= 0 and num <= 5:
+    if num == 5:
+        total +=1
+    num = int(input())
+        
+print(total)
+   
+
+
