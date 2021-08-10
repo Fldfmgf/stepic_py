@@ -1,0 +1,18 @@
+#7.3
+
+#Необходимо найти два максимальных числа из введеных
+
+num1 = int(input())
+first_one, second_one = 0,0
+
+for i in range(num1):
+    num2 = int(input())
+    if num2 > first_one:
+        second_one = first_one
+        first_one = num2
+    elif num2 > second_one:
+        second_one = num2
+
+
+        
+print(first_one,second_one)
