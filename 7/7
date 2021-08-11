@@ -218,5 +218,44 @@ while num >= 0 and num <= 5:
         
 print(total)
    
+#программа на нахождение минимального количества элементов в переменной n
+
+num,count = int(input()), 0
+while num - 25 >= 0:
+    count += 1
+    num -= 25
+while num - 10 >= 0:
+    count += 1
+    num -=10
+while num - 5 >= 0:
+    count += 1
+    num -= 5
+while num - 1 >= 0:
+    count += 1
+    num -= 1
+
+print(count)
+
+#7.5 
+
+#ыывод цифр числа в обратном порядке
+
+num = int(input())
+while num != 0:
+    a = num % 10
+    print(a)
+    num = num // 10
+    
+#ыывод цифр числа в обратном порядке ы линию 
+
+num = int(input())
+while num != 0:
+    a = num % 10
+    print(a, end='')
+    num = num // 10
+
+
+
+
 
 
