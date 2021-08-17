@@ -1,0 +1,45 @@
+# 9 - Строковый тип данных 
+# 9.1 - Индексация 
+
+# программа выводит каждый элемент строки кратный двум
+
+s = input()
+for i in range(0,len(s),2):
+    print(s[i])
+
+# вывод элементов строки в обратном порядке
+
+s = 'abc'
+print(s[-1],s[-2],s[-3], end='')
+
+# вывод первых трех элементов с помощью конкатенации 
+
+a,b,c = input(),input(),input()
+print(b[0]+a[0]+c[0])
+
+# сумма цифр числа
+
+num, total = input(),0
+for i in range(len(num)):
+    total += int(num[i])  # фунция int() переводит num[i] в числовой формат, перебирая цифры числа одно за другим, цикл суммирует их в переменной 
+print(total)
+
+#
+
+s = input()
+for i in range(10):
+    if str(i) in s:
+        print('Цифра')
+        break
+else:
+    print('Цифр нет')
+   
+#
+
+abc = input()
+for c in abc:
+    if c in '0123456789':
+        print('Цифра')
+        break
+else:
+    print('Цифр нет')
